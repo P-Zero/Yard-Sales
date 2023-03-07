@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="new_password">
+        <img src="./logos/logo_yard_sale.svg" alt="yardsaleLogo" class="yardlogo">
+        <h1>Create a new password</h1>
+        <h2>Enter a new password for your account</h2>
+        <div class="form_container">
+            <p class="form_p">Password</p>
+            <label for="password"></label>
+            <input type="password" placeholder="********" id="password" class="pwrd_input">
+            <p class="form_p">Re-enter Password</p>
+            <label for="re-password"></label>
+            <input type="password" placeholder="********" id="re-password" class="pwrd_input">
+            <button id="submit" class="button">Confirm</button>
+        </div>
+    </section>
+    <section id="email_sent">
+        <img src="./logos/logo_yard_sale.svg" alt="yardsaleLogo" class="yardlogo">
+        <h1>Email has been sent!</h1>
+        <h2>Please check your inbox for instruccions on how to reset the password</h2>
+        <img src="./icons/email.svg" alt="emailIcon" id="email_icon">
+        <button class="button">Login</button>
+        <p class="form_p">Dind't reviece the email? <a class="link" id="resend" href="/">Resend</a></p>
+    </section>
+    <section id="login">
+        <img src="./logos/logo_yard_sale.svg" alt="yardsaleLogo" class="yardlogo">
+        <div id="login_form">
+            <p class="form_p">Email address</p>
+            <label for="email"></label>
+            <input type="email" placeholder="example@email.com" id="email" class="pwrd_input">
+            <p class="form_p">Password</p>
+            <label for="password"></label>
+            <input type="password" placeholder="********" id="password" class="pwrd_input">
+            <button class="button">Log in</button>
+        </div>
+        <a class="link" id="forgot" href="/">Forgot my password</a>
+        <button id="singup" class="button">Sign up</button>
+    </section>
+    <section id="create_account">
+        <h1>My account</h1>
+        <div id="account_form">
+            <p class="form_p">Name</p>
+            <label for="name"></label>
+            <input type="text" placeholder="Benjamin" id="name" class="pwrd_input">
+            <p class="form_p">Email address</p>
+            <label for="email"></label>
+            <input type="email" placeholder="example@email.com" id="email" class="pwrd_input">
+            <p class="form_p">Password</p>
+            <label for="password"></label>
+            <input type="password" placeholder="********" id="password" class="pwrd_input">
+        </div>
+        <button id="create_acc_button" class="button">Create account</button>
+    </section>
+    <section id="edit_account">
+        <h1>My account</h1>
+        <div id="edit_form">
+            <p class="form_p">Name</p>
+            <label for="name"></label>
+            <p class="acc_data" id="name" class="pwrd_input">Benjamin</p>
+            <p class="form_p">Email address</p>
+            <label for="email"></label>
+            <p class="acc_data" id="email" class="pwrd_input">example@email.com</p>
+            <p class="form_p">Password</p>
+            <label for="password"></label>
+            <p class="acc_data" id="password" class="pwrd_input">********</p>
+        </div>
+        <button id="edit_acc_button" class="button">Edit</button>
+    </section>
+    <section id="main">
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+        <div class="product-container">
+            <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="product">
+            <div class="description">
+                <p class="price">$120,00</p>
+                <p class="p_name">Product name</p>
+            </div>
+            <figure><img src="./icons/bt_add_to_cart.svg" alt="add to cart"></figure>
+        </div>
+    </section>
+    <div class="menues">
+        <section id="desktop-menu">
+            <div class="desktop-menu">
+                <ul>
+                  <li>
+                    <a href="/" class="title">My orders</a>
+                  </li>
+            
+                  <li>
+                    <a href="/">My account</a>
+                  </li>
+            
+                  <li>
+                    <a href="/">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+        </section>
+        <section id="mobile-menu">
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                      <a href="/">CATEGORIES</a>
+                    </li>
+                    <li>
+                      <a href="/">All</a>
+                    </li>
+                    <li>
+                      <a href="/">Clothes</a>
+                    </li>
+                    <li>
+                      <a href="/">Electronics</a>
+                    </li>
+                    <li>
+                      <a href="/">Furnitures</a>
+                    </li>
+                    <li>
+                      <a href="/">Toys</a>
+                    </li>
+                    <li>
+                      <a href="/">Other</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="/">My orders</a>
+                    </li>
+                    <li>
+                      <a href="/">My account</a>
+                    </li>
+                  </ul>
+                  <div id="last_ul">
+                    <ul>
+                        <li>
+                          <a href="/" class="menu-email">example@email.com</a>
+                        </li>
+                        <li>
+                          <a href="/" class="menu-sign-out">Sign out</a>
+                        </li>
+                      </ul>
+                  </div>
+            </div>
+        </section>
+    </div>
+    <section id="cart">
+        <h1 class="cart_title">My order</h1>
+        <div class="cart_total">
+            <div class="cart_details">
+                <p class="cart_date" >04.25.2022</p>
+                <p class="cart_item_desc">4 articles</p>
+            </div>
+            <div class="cart_price">
+                <p class="cart_item_price">$ 560,00</p>
+            </div>
+        </div>
+        <div class="cart_products">
+            <div class="cart_item">
+                <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="cart_product">
+                <p class="cart_item_desc">Amazing bike</p>
+                <p class="cart_item_price">$ 120,00</p>
+            </div>
+            <div class="cart_item">
+                <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="cart_product">
+                <p class="cart_item_desc">Amazing bike</p>
+                <p class="cart_item_price">$ 120,00</p>
+            </div>
+            <div class="cart_item">
+                <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="cart_product">
+                <p class="cart_item_desc">Amazing bike</p>
+                <p class="cart_item_price">$ 120,00</p>
+            </div>
+            <div class="cart_item">
+                <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="cart_product">
+                <p class="cart_item_desc">Amazing bike</p>
+                <p class="cart_item_price">$ 120,00</p>
+            </div>
+            <div class="cart_item">
+                <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" class="cart_product">
+                <p class="cart_item_desc">Amazing bike</p>
+                <p class="cart_item_price">$ 120,00</p>
+            </div>
+        </div>
+    </section>
+    <section id="my_orders">
+        <h1 class="cart_title">My orders</h1>
+        <div class="orders_list">
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >04.22.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >02.20.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >02.10.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.09.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.08.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.02.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.02.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.02.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="orders_item">
+                <div class="cart_details">
+                    <p class="cart_date" >01.02.2022</p>
+                    <p class="cart_item_desc">4 articles</p>
+                </div>
+                <div class="cart_price">
+                    <p class="cart_item_price">$ 560,00</p>
+                </div>
+                <img src="./icons/flechita.svg" alt="arrow">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
