@@ -1,20 +1,40 @@
 const mobileMenuIcon = document.querySelector(".mobile_menu_icon")
 const mobileMenu = document.querySelector(".mobile-menu")
+const desktopMenu = document.querySelector(".desktop-menu")
+const desktopMenuIcon = document.querySelector(".user__profile-icon")
 const cartAside = document.querySelector(".cart")
 const cartIcon = document.querySelector(".cart_icon")
 const mainSection = document.querySelector("#main")
+const productDetail = document.querySelector(".product-detail")
+const productDetailCloseIcon = document.querySelector(".product-detail-close")
 const productList = [];
 
 mobileMenuIcon.addEventListener("click", toggleMobileMenu)
+desktopMenuIcon.addEventListener("click", toggleDesktopMenu)
 cartIcon.addEventListener("click", toggleCartAside)
+productDetailCloseIcon.addEventListener("click", toggleProductDetail)
 
 function toggleMobileMenu() {
     cartAside.classList.add("inactive")
+    productDetail.classList.add("inactive")
     mobileMenu.classList.toggle("inactive")
 }
 function toggleCartAside() {
     mobileMenu.classList.add("inactive")
+    productDetail.classList.add("inactive")
+    desktopMenu.classList.add("inactive")
     cartAside.classList.toggle("inactive")
+}
+function toggleProductDetail() {
+    mobileMenu.classList.add("inactive")
+    cartAside.classList.add("inactive")
+    desktopMenu.classList.add("inactive")
+    productDetail.classList.toggle("inactive")
+}
+function toggleDesktopMenu() {
+    desktopMenu.classList.toggle("inactive")
+    cartAside.classList.add("inactive")
+    productDetail.classList.add("inactive")
 }
 
 productList.push({
@@ -57,6 +77,8 @@ function renderProducts(arr) {
         productInfoFigure.appendChild(productImgCart)
         productCard.append(productImg, productInfoDiv, productInfoFigure)
         mainSection.appendChild(productCard)
+
+        productImg.addEventListener("click", toggleProductDetail)
     }
 }
 renderProducts(productList);
